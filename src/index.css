@@ -73,20 +73,29 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
+h4 {
+  margin: 0 auto 5px;
+  color: white;
+}
+
 p {
   margin: 0;
 }
@@ -104,4 +113,34 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lightgreen;
+  color: black;
+}
+
+.countryStyle {
+  border: 1px solid lightgreen;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.visitedStyle {
+  border: 1px solid tomato;
 }
